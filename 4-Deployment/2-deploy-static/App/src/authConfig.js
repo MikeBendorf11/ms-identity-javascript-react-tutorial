@@ -67,7 +67,7 @@ export const protectedResources = {
         scopes: ["User.Read"],
     },
     functionApi: {
-        endpoint: "/api/hello",
+        endpoint: "http://localhost:7071/api/hello",
         scopes: [`${process.env["REACT_APP_AAD_APP_FUNCTION_SCOPE_URI"]}/access_as_user`], // e.g. api://xxxxxx/access_as_user
     }
 }
